@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простейшие программы</title>
+</head>
+<body>
+    <script>
+        // 2.19
+        /* Дано четырехзначное число. Найти:
+           а) сумму его цифр;
+           б) произведение его цифр. */
+        let number, d1,d2,d3,d4;
+        number = parseInt(prompt("Введите 4-значное число"))
+
+        d1 = number % 10; //единицы
+        d2 = Math.floor(number / 10 ) % 10; //десятки
+        d3 = Math.floor(number / 100 ) % 10; //сотни
+        d4 = Math.floor(number / 1000 ) % 10; //тысячи
+        
+        alert(d1 + d2 + d3 + d4); //a
+
+        alert(d1 * d2 * d3 * d4); //б
+    </script>
+
+
+    <script>
+         /*2.3
+         Дана масса в килограммах. Найти число полных тонн в ней. */
+         let m ;
+         m = parseInt(prompt("введите число кг "));
+         calculation = Math.floor(m/1000);
+         alert( calculation +  " тонны");
+    </script>
+    
+    <script>
+        /* 1.37
+        Даны катеты прямоугольного треугольника. Найти его периметр.*/
+        let a , b, c;
+        a = parseInt(prompt("Введите a катет"));
+        b = parseInt(prompt("Введите b катет"));
+        c = Math.sqrt(a*a + b*b);
+        alert(a+b+c);
+    </script>
+    
+</body>
+</html>
